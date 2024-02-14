@@ -1,15 +1,16 @@
 {
   "name": "app-center",
-  "version": "1.0.0",
-  "description": "a center for all my apps",
-  "main": "app-center.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app-center.js"
+    "start": "node ./bin/www"
   },
-  "author": "Adriel Benjamin Martinez Quintanilla",
-  "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
   }
 }
