@@ -4,7 +4,8 @@
   "description": "a center for all my apps",
   "main": "app-center.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app-center.js"
   },
   "author": "Adriel Benjamin Martinez Quintanilla",
   "license": "MIT",
