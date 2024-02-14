@@ -10,6 +10,16 @@
 
 
 
+.apps-menu--Container {
+  display: flex;
+}
+
 .app_icon--container {
-  
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 100px;
+  align-items: center;
+  background-color: grey;
+  margin: 0 1%;
 }
