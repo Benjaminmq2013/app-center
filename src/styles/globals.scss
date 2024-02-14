@@ -9,9 +9,15 @@
 }
 
 
+main {
+  overflow: hidden;
+  position: relative;
+}
 
 .apps-menu--Container {
   display: flex;
+  padding: 0 5%;
+  padding-top: 30px;
 }
 
 .app_icon--container {
@@ -20,6 +26,27 @@
   text-align: center;
   max-width: 100px;
   align-items: center;
-  background-color: grey;
+  // background-color: grey;
   margin: 0 1%;
+
+  .title {
+
+  }
+
+}
+
+
+.app_icon--container.horizontal {
+  flex-direction: row;
+}
+
+.early-access--tag {
+  background-color: #FF639B;
+  text-align: center;
+  width: 200px;
+  color: white;
+  position: absolute;
+  top: 28px;
+  right: -58px;
+  transform: rotate(45deg);
 }
