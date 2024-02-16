@@ -38,6 +38,20 @@ main {
 
 .app_icon--container.horizontal {
   flex-direction: row;
+  max-width: initial;
+  width: initial;
+  margin: 0 auto;
+  img {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+  }
+}
+
+.apps-menu--wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 37px 0;
 }
 
 .early-access--tag {

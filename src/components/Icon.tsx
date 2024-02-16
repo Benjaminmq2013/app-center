@@ -5,6 +5,7 @@ interface props {
   title: string,
   imageUrl: string,
   horizontal?: boolean,
+  onClick?: () => void
 }
 
 /**
@@ -30,9 +31,8 @@ interface props {
  */
 
 const Icon = (props:props) => {
-  console.log(props.horizontal)
   return (
-    <div className={"app_icon--container" + (props.horizontal ? " horizontal" : "")} >
+    <div className={"app_icon--container" + (props.horizontal ? " horizontal" : "")} onClick={ props.onClick } >
         <Image src={ props.imageUrl } alt="Icon" width={55} height={55} /> 
         <label className='title' >{ props.title }</label>       
     </div>
