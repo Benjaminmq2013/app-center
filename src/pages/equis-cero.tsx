@@ -1,9 +1,5 @@
 import React, { useState } from 'react'
-import { checkWinner, gameProgress } from "../modules/tic-tac-toe/checkWinner"
-
-
-
-type Digit = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
+import { checkWinner, gameProgress, Digit } from "../modules/tic-tac-toe/checkWinner"
 
 const TicTacToe = () => {
 
