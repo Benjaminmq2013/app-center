@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { checkWinner, gameProgress, Digit } from "../modules/tic-tac-toe/checkWinner"
 import Icon from '@/components/Icon';
+import { Toaster } from 'alert';
 
 const TicTacToe = () => {
 
@@ -40,7 +41,7 @@ const TicTacToe = () => {
         </div>
 
         <Icon imageUrl='/assets/AppIcons/reload.svg' title='New Game' onClick={ () => location.reload() } />
-
+        <Toaster position='top-center'/>
         <div className="early-access--tag" >Early Access</div>
     </main>
     
