@@ -1,9 +1,10 @@
 
-.tic-tac-toe__section {
+.tic-tac-toe__section { 
 
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100vh;
     
     .tic-tac-toe__container {
@@ -52,6 +53,13 @@
         .square-9 {
             border-bottom: 0;
             border-right: 0;
+        }
+    }
+
+    .app_icon--container {
+        margin-top: 50px;
+        .title {
+            margin-top: 10px;
         }
     }
 }

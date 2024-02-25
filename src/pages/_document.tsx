@@ -7,6 +7,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        <script src="/js/lib/confetti.min.js" ></script>
       </body>
     </Html>
   );

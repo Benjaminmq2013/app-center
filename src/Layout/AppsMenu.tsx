@@ -13,6 +13,7 @@ const AppsMenu = () => {
         <Icon imageUrl='/assets/AppIcons/avatar-logo.png' title='Avatar Cibernetico' />
         <Icon imageUrl='/assets/AppIcons/gta-logo.png' title='Gta Radio' />
         <Icon imageUrl='/assets/AppIcons/interest.svg' title='Interes Compuesto' onClick={() => router.push("/interes-compuesto") } />
+        <Icon imageUrl='/assets/AppIcons/equis-cero.svg' title='Equis Cero' onClick={() => router.push("/equis-cero") } />
       </div>
     </div>
   )
