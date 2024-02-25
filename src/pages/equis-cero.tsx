@@ -7,6 +7,9 @@ const TicTacToe = () => {
 
     const [ game, setGame ] = useState<gameProgress>({1: "", 2: "", 3: "", 4: "", 5: "", 6: "", 7: "", 8: "", 9: ""})
     const [ turno, setTurno ] = useState<boolean>(true)
+
+    // useEffect:
+    checkWinner(game)
     
     const handleClick = (number:Digit) => {
         setTurno(!turno)
@@ -20,7 +23,7 @@ const TicTacToe = () => {
             setGame({ ...game, [number]: "0" })
         }
 
-        checkWinner(game)
+        
     }
 
   return (

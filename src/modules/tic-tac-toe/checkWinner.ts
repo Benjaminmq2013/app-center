@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 
 export type gameProgress = {
     [K in 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]: "x" | "0" | "";
@@ -19,17 +21,23 @@ const combinaciones:Digit[][] = [
 ]
 
 export const checkWinner = (game:gameProgress) => {
-    combinaciones.forEach((combi) => {
 
-        console.log(combi[0]+":",game[combi[0]] ,combi[1]+":", game[combi[1]], combi[2]+":", game[combi[2]])
-        
-        if(game[combi[0]] === "x" && game[combi[1]] === "x" && game[combi[2]] === "x") {
-            console.log("The winner is X")
+    useEffect(() => {
+        combinaciones.forEach((combi) => {
 
-        } else if (game[combi[0]] === "0" && game[combi[1]] === "0" && game[combi[2]] === "0"){
-            console.log("The winner is 0")
-        }
-    })
-    console.log("*****************************************************")
+            // console.log(combi[0]+":",game[combi[0]] ,combi[1]+":", game[combi[1]], combi[2]+":", game[combi[2]])
+            
+            if(game[combi[0]] === "x" && game[combi[1]] === "x" && game[combi[2]] === "x") {
+                console.log("The winner is X")
+                alert("The winner is X")
+    
+            } else if (game[combi[0]] === "0" && game[combi[1]] === "0" && game[combi[2]] === "0"){
+                console.log("The winner is 0")
+                alert("The winner is 0")
+            }
+        })
+    }, [game]);
+
+   
     
 }
