@@ -1,0 +1,25 @@
+
+
+.stats-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+
+    background: rgb(25,99,248);
+    background: linear-gradient(140deg, rgba(25,99,248,1) 0%, rgba(68,232,183,1) 100%);
+    color: white;
+    background-repeat: no-repeat;
+}
+
+.stats-list-title {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.stats-list {
+    li {
+        margin-top: 10px;
+    }
+}
