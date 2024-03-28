@@ -6,6 +6,7 @@
     align-items: center;
     min-height: 100vh;
     flex-direction: column;
+    padding-bottom: 250px;
 
     background: rgb(25,99,248);
     background: linear-gradient(140deg, rgba(25,99,248,1) 0%, rgba(68,232,183,1) 100%);
@@ -15,11 +16,13 @@
 
 .stats-list-title {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 27px;
+    margin-bottom: 15px;
 }
 
 .stats-list {
     li {
         margin-top: 10px;
+        font-size: 20px;
     }
 }

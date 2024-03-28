@@ -1,15 +1,26 @@
 import React from 'react'
+import { ListItem, dataList } from '@/components/stats/ListItem'
+
+
 
 const Stats = () => {
+
+  const dataList:dataList[] = [
+    { title: "1- Crear contenido", item: "1-c-c" },
+    { title: "2- Aprender Sitecore", item: "1-a-s" },
+    { title: "3- Hacer ejercicios", item: "3-h-e" },
+    { title: "4- Ser más proactivo", item: "4-s-m-p" },
+    { title: "5- ser independiente", item: "5-s-i" },
+
+  ]
+
   return (
     <div className="stats-list-container">
         <h1 className="stats-list-title" >Mis compromisos:</h1>
         <ol className="stats-list" >
-            <li>1- Crear contenido <span>⭐</span> </li>        
-            <li>2- Aprender Sitecore <span>⭐</span> </li>
-            <li>3- Hacer ejercicios <span>⭐</span> </li>
-            <li>4- Ser más proactivo <span>⭐</span> </li>
-            <li>5- ser independiente <span>⭐</span> </li>
+            {dataList.map((data) => (
+              <ListItem key={ data.item } item={ data.item } title={ data.title }  />
+            ))}
         </ol>
         
     </div>
